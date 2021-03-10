@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".userDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo_with_name" />
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="WELCOME TO DASHBOARD"
+            android:textColor="#061771"
+            android:textSize="30sp"
+            android:transitionName="logo_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:animateLayoutChanges="true"
+            android:background="#112073"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/images" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/user"
+                android:fontFamily="serif"
+                android:includeFontPadding="false"
+                android:text="Sania Khawaja"
+
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/user"
+                android:includeFontPadding="false"
+                android:text="10101"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:textColorHint="#0F25FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/image_user"
+                    android:drawablePadding="10dp"
+                    android:text="sania"
+                    android:id="@+id/full_user_name"
+                    android:textColor="#0F25FF" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#0F25FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/image_password"
+                    android:drawablePadding="10dp"
+                    android:text="Password"
+                    android:id="@+id/full_password"
+                    android:textColor="#0F25FF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#0F25FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/image_contact"
+                    android:drawablePadding="10dp"
+                    android:text="XYZ@example.com"
+                    android:id="@+id/email"
+                    android:textColor="#0F25FF" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:onClick="update"
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login"
+                android:fontFamily="serif"
+                android:text="UPDATE"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:transitionName="button_tran" />
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login"
+                android:fontFamily="serif"
+                android:text="LIVE LOCATION"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:transitionName="button_tran" />
+
+            <Button
+                android:id="@+id/logOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/login"
+                android:fontFamily="serif"
+                android:text="LOGOUT"
+                android:textColor="#fff"
+                android:onClick="Logout"
+                android:textSize="20dp"
+                android:transitionName="button_tran" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

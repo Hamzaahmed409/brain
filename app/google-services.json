@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "167707829",
+    "firebase_url": "https://brain-ride.firebaseio.com",
+    "project_id": "brain-ride",
+    "storage_bucket": "brain-ride.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167707829:android:110f3ba4f2ead52526eafc",
+        "android_client_info": {
+          "package_name": "com.example.brain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167707829-qqq597sev55rqeffoqm1m037lrq6cq39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brain",
+            "certificate_hash": "6beeab654b4eb8fd83e0df779b9d2f6852b7bc42"
+          }
+        },
+        {
+          "client_id": "167707829-g28fuf1j0n5gcbtpm4rfvimp86p4vp60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brain",
+            "certificate_hash": "d8c5837fcc71f7056479ab274ba435d332595086"
+          }
+        },
+        {
+          "client_id": "167707829-r25pvul9dskoti2ltm7kbgc16p9rcvnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFrFuKVs1oSeGx5JlZ_w3CU31vS57juO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167707829-r25pvul9dskoti2ltm7kbgc16p9rcvnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
